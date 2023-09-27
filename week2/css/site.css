@@ -1,0 +1,61 @@
+@import url("body.css");
+h1,h2,h3 {
+    color: rgb(168, 139, 116); 
+    /* color: hsl(120,100%,50%); */
+    /* color: hsl(180,50%,50%); */
+}
+
+p.funky-style {
+    color: #00f;
+}
+
+p:not(.funky-style) {
+    font-style: italic;
+}
+
+#bingo {
+    background-color: antiquewhite;
+    color: violet;
+    width: 500px;
+}
+
+
+
+li:first-child {
+    color: purple;
+}
+
+li:nth-child(2) {
+    text-decoration: line-through;
+}
+
+li:last-child {
+    color: pink;
+}
+
+span {
+    background-color: greenyellow;
+    color: black;
+    font-size: 28pt;
+}
+
+p {
+    color: brown;
+}
+
+div p {
+    color: darkgreen;
+    text-align: center;
+}
+
+div + p {
+    font-weight: bold;
+}
+
+ul li {
+    background-color: lemonchiffon;
+}
+
+ul>li { /* direct descendants only */
+    background-color: lightcyan;
+}

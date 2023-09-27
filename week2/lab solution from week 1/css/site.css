@@ -1,0 +1,37 @@
+.indexclass {
+    background-color: wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+#headerindex {
+    background-color: blue;
+    color: yellow;
+}
+
+.schoolclass {
+    background-color: brown;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 350%;
+}
+#headerschool {
+    background-color: blue;
+    color: yellow;
+}
+
+.moviesclass {
+    background-color: tomato;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+#headermovies {
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
