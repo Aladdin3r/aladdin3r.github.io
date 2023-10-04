@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables Rowspan Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
     <style>
         caption {
             display: none;
@@ -34,6 +37,22 @@
             width: 80%;
             margin: auto;
         }
+        tr:nth-of-type(even) {
+            background-color: #eaeaea;
+        }
+        thead {
+            font-size: larger;
+            background-color: yellow;
+        }
+        tbody {
+            font-family: monospace;
+        }
+        tfoot {
+            font-style: italic;
+        }
+        h1 {
+            font-family: 'Dancing Script', cursive;
+        }
     </style>
 </head>
 <body>
@@ -41,50 +60,57 @@
         <h1>Tables Rowspan Demo</h1>
         <table>
             <caption>Students</caption>
-            <!-- Table Row -->
-            <tr>
-                <!-- Table Header -->
-                <th colspan="4">Students</th>
-            </tr>
-            <tr>
-                <!-- Table Header -->
-                <th id="student-id">ID</th>
-                <th id="first-name">First Name</th>
-                <th id="last-name">Last Name</th>
-                <th id="school">School</th>
-            </tr>
-            <tr>
-                <!-- table data-->
-                <td headers="id">A00123456</td>
-                <td headers="first-name">Tom</td>
-                <td headers="last-name">Max</td>
-                <td rowspan="3" headers="school">Medicine</td>
-            </tr>
-            <tr>
-                <!-- table data-->
-                <td headers="id">A00319456</td>
-                <td headers="first-name">Tim</td>
-                <td headers="last-name">Lee</td>
-            </tr>
-            <tr>
-                <!-- table data-->
-                <td headers="id">A00111111</td>
-                <td headers="first-name">Ann</td>
-                <td headers="last-name">Fay</td>
-            </tr>
-            <tr>
-                <!-- table data-->
-                <td headers="id">A00789102</td>
-                <td headers="first-name">Joe</td>
-                <td headers="last-name">Sun</td>
-                <td rowspan="2" headers="school">Carpentry</td>
-            </tr>
-            <tr>
-                <!-- table data-->
-                <td headers="id">A00123597</td>
-                <td headers="first-name">Ben</td>
-                <td headers="last-name">Ray</td>
-            </tr>
+            <thead>
+                <!-- Table Row -->
+                <tr>
+                    <!-- Table Header -->
+                    <th colspan="4">Students</th>
+                </tr>
+                <tr>
+                    <!-- Table Header -->
+                    <th id="student-id">ID</th>
+                    <th id="first-name">First Name</th>
+                    <th id="last-name">Last Name</th>
+                    <th id="school">School</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- table data-->
+                    <td headers="id">A00123456</td>
+                    <td headers="first-name">Tom</td>
+                    <td headers="last-name">Max</td>
+                    <td style="vertical-align: top;" rowspan="3" headers="school">Medicine</td>
+                </tr>
+                <tr>
+                    <!-- table data-->
+                    <td headers="id">A00319456</td>
+                    <td headers="first-name">Tim</td>
+                    <td headers="last-name">Lee</td>
+                </tr>
+                <tr>
+                    <!-- table data-->
+                    <td headers="id">A00111111</td>
+                    <td headers="first-name">Ann</td>
+                    <td headers="last-name">Fay</td>
+                </tr>
+                <tr>
+                    <!-- table data-->
+                    <td headers="id">A00789102</td>
+                    <td headers="first-name">Joe</td>
+                    <td headers="last-name">Sun</td>
+                    <td rowspan="2" headers="school">Carpentry</td>
+                </tr>
+                <tr>
+                    <!-- table data-->
+                    <td headers="id">A00123597</td>
+                    <td headers="first-name">Ben</td>
+                    <td headers="last-name">Ray</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="4">Total: 4 students</td>
+            </tfoot>
         </table>
      </div>
 </body>
