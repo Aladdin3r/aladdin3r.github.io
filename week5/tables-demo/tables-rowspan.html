@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Rowspan Demo</title>
+    <style>
+        caption {
+            display: none;
+        }
+        table {
+            width: 60%;
+            margin: auto;
+        }
+        table, td, th {
+            border: 1px solid #000;
+            }
+        
+        #studentid {
+            width: 10%;
+        }
+
+        #first-name {
+            width: 40%;
+        }
+        #last-name {
+            width: 40%;
+        }
+        #school {
+            width: 10%;
+        }
+
+        div {
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Tables Rowspan Demo</h1>
+        <table>
+            <caption>Students</caption>
+            <!-- Table Row -->
+            <tr>
+                <!-- Table Header -->
+                <th colspan="4">Students</th>
+            </tr>
+            <tr>
+                <!-- Table Header -->
+                <th id="student-id">ID</th>
+                <th id="first-name">First Name</th>
+                <th id="last-name">Last Name</th>
+                <th id="school">School</th>
+            </tr>
+            <tr>
+                <!-- table data-->
+                <td headers="id">A00123456</td>
+                <td headers="first-name">Tom</td>
+                <td headers="last-name">Max</td>
+                <td rowspan="3" headers="school">Medicine</td>
+            </tr>
+            <tr>
+                <!-- table data-->
+                <td headers="id">A00319456</td>
+                <td headers="first-name">Tim</td>
+                <td headers="last-name">Lee</td>
+            </tr>
+            <tr>
+                <!-- table data-->
+                <td headers="id">A00111111</td>
+                <td headers="first-name">Ann</td>
+                <td headers="last-name">Fay</td>
+            </tr>
+            <tr>
+                <!-- table data-->
+                <td headers="id">A00789102</td>
+                <td headers="first-name">Joe</td>
+                <td headers="last-name">Sun</td>
+                <td rowspan="2" headers="school">Carpentry</td>
+            </tr>
+            <tr>
+                <!-- table data-->
+                <td headers="id">A00123597</td>
+                <td headers="first-name">Ben</td>
+                <td headers="last-name">Ray</td>
+            </tr>
+        </table>
+     </div>
+</body>
+</html>
