@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>BCIT Online Store</title>
+    <link rel="stylesheet" href="styles/tickets.css" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <img src="images/bcit.png" alt="BCIT logo" height="80" />
+        <h1>British Columbia Institute of Technology</h1>
+      </header>
+      <section>
+        <br />
+        <h3 style="color: #003c78;">Order Form</h3>
+        <form method="post" action="https://comporder.azurewebsites.net/home/placeorder" enctype="multipart/form-data">
+          <fieldset>
+            <legend>Member Information</legend>
+          E-mail: 
+          <input type="email" name="Email" required="" />
+          <br />
+          First Name: 
+          <input type="text" name="FirstName" placeholder="First Name" required=""/>
+          <br />
+          Last Name: 
+          <input type="text" name="LastName" placeholder="Last Name" required=""/>
+          <br />
+          Street: 
+          <input type="text" name="Street" />
+          <br />
+          City: 
+          <input type="text" name="City" required="" />
+          <br />
+          Province: 
+          <input type="text" name="Province" maxlength="2" 
+          placeholder=" 2-character province code" required="" />
+          <br />
+          Postal Code: 
+          <input type="text" name="PostalCode" 
+          pattern="[a-zA-Z]\d[a-zA-Z]?\d[a-zA-Z]\d" 
+          title="must be a9a 9a9 format" placeholder="format:a9a 9a9" />
+          <br />
+          Phone Number: 
+          <input type="tel" name="Phone" placeholder="999-999-9999"
+          pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-999 format" />
+          <br />
+        </fieldset>
+        
+        <fieldset>
+          <legend>Ordering Information</legend>
+        Order Type: 
+        <select name="OrderType">
+          <option value="m">Member Package</option>
+          <option value="d">Donor Package</option>
+          <option value="s">Single Tickets</option>
+        </select> <br />
+        Number of Tickets:
+        <input type="range" step="1" name="NumberOfTickets" /> <br />
+        Event Date:
+        <input type="date" name="event_date" /> <br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment Method:</legend>
+          <input name="PaymentType" type="radio" value="bill" /> Bill Me
+          <input name="PaymentType" type="radio" value="credit"/> Credit Card
+          <input name="PaymentType" type="radio" value="paypal"/> Paypal
+        </fieldset>
+        
+        <fieldset>
+          <legend>Credit Card Information</legend>
+          Card Type:
+          <select name="CardType">
+            <option value="v">Visa</option>
+            <option value="m">MasterCard</option>
+            <option value="d">Discovery</option>
+          </select> <br />
+          Card Number:
+          <input type="text" pattern="\d{16}" placeholder="16 digits" 
+          title="Must be 16 digits" required="" name="CardNumber" /> <br />
+          Expiration Date:
+          <select name="/ExpiryMonth">
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+          <select name="ExpiryYear">
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+          </select>
+          <br />
+        </fieldset>
+        
+        <fieldset>
+          <legend>Submit Your Membership</legend>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset Fields" />
+        </fieldset>
+      </form>
+      </section>
+      <footer>
+        <p>&copy; 2023, BCIT, Canada</p>
+      </footer>
+    </div>
+  </body>
+</html>

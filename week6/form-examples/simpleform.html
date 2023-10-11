@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+    <h1>Tell us about yourself</h1>
+    <form method="post" action="https://www.bogus.com" enctype="multipart/form-data">
+       <!-- BCIT ID Number -->
+       <!-- <input type="text" name="IdCardNumber" 
+       pattern="[Aa]\d{8}"
+       title="Pattern: A12345678"
+       id="IdCardNumber" />
+        <br /> -->
+        
+        <!-- Enter your opinion about us:
+        <br />
+        <textarea cols="50" rows="10"></textarea> -->
+        <!-- <input type="file" accept="application/pdf" />
+         -->
+        
+         <!-- <input name="username" placeholder="Username" /> <br />
+        <input type="password" name="password" placeholder="Password" /> -->
+        <fieldset>
+            <legend>SPORTS</legend>
+        What sports do you like: 
+        <br />
+        <input type="checkbox" name="tennis" id="tennis" /> 
+        <label for="tennis">Tennis</label> 
+        <br />
+        <input type="checkbox" name="soccer"id="soccer"/> 
+        <label for="soccer">Soccer</label> 
+        <br />
+        <input type="checkbox" name="swimming" id="swimming" /> 
+        <label for="swimming">Swimming</label> 
+        <br />
+        <input type="checkbox" name="basketball" id="basketball" />
+         <label for="basketball">Basketball</label>
+          <br />
+        </fieldset>
+
+        <fieldset>
+            <legend>COLOURS</legend>
+        What is your favourite colour?    
+        <br />
+        <input type="radio" name="colour" value="Red" /> Red
+        <br />
+        <input type="radio" name="colour" value="Green"/> Green
+        <br />
+        <input type="radio" name="colour" value="Blue"/> Blue
+        <br />   
+        </fieldset>
+        <!-- <input type="hidden" name="shopping-cart-id" value="34987" /> -->
+    
+        <fieldset>
+            <legend>PROVINCES</legend>
+        In which province do you live?
+        <br />
+        <select name="province" size="1"> 
+            <option value="0">Choose One</option>
+            <option value="BC" selected>British Columbia</option>
+            <option value="AB">Alberta</option>
+            <option value="ON">Ontario</option>
+        </select>
+    </fieldset>
+
+    <!-- <label for="color">Favorite Color:</label> <input type="text" name="color" id="color" list="colors">
+<datalist id="colors">
+     <option value="red" label="Red">
+     <option value="green" label="Green">
+     <option value="blue" label="Blue">
+     <option value="yellow" label=“Yellow">
+     <option value="pink" label="Pink">
+      <option value="black" label="Black">
+</datalist> -->
+
+    <!-- Low
+    <input type="range" name="Temperature" min="0" max="50" />
+    High -->
+<!-- 
+    Rate us between 1 and 10
+    <input type="number" min="1" max="10" />
+    <br /> -->
+
+    <!-- Choose a date for your visit:
+    <input type="date" name="visitDate" /> -->
+
+    <input type="color" name="colour" />
+
+    <!-- <input type="search" name="phone" placeholder="search" />  -->
+        <br />
+        <input type="submit" value="Save" />
+        <input type="reset" value="Clear" />
+        <!-- <input type="image" src="images/button_noun_002_05071.jpg" /> -->
+        <button>I am a button</button>
+    </form>
+</body>
+</html>
+<!-- https://comporder.azurewebsites.net/home/contact -->
