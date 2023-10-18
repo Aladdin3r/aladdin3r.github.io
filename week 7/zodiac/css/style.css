@@ -1,0 +1,147 @@
+h1, h2 {
+    color: #A3262A;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background-color: #FFD84B;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: auto;
+}
+
+nav a {
+    display: inline;
+    text-decoration: none;
+    color: #A3262A;
+}
+
+nav {
+    display: block;
+    max-width: 18%;
+    margin-top: 30px;
+    padding-left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+nav li {
+    list-style-type: none;
+    text-decoration: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+nav ul {
+    background-color: #FEF6B3;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    position: fixed;
+    height: 20%;
+    overflow: auto;
+}
+
+nav li a:hover {
+    background-color: grey;
+    color: black;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #FCEC5E;
+    color: #988C38;
+}
+
+/* all content goes here  so the alignment is correct*/
+.content {
+    margin-left: 20%;
+    padding: 1px 16px;
+    height: auto;
+    display: inline-block;
+}
+
+#zodiac_chart {
+    max-width: 40%;
+    max-height: 40%;
+}
+
+.content a {
+    display: block;
+}
+/* the individual signs alignment */
+#rat {
+    display: inline-block;
+    text-align: center;
+}
+#ox {
+    display: inline-block;
+    text-align: center;
+}
+#tiger {
+    display: inline-block;
+    text-align: center;
+}
+#rabbit {
+    display: inline-block;
+    text-align: center;
+}
+#dragon {
+    display: inline-block;
+    text-align: center;
+}
+#snake {
+    display: inline-block;
+    text-align: center;
+}
+#horse {
+    display: inline-block;
+    text-align: center;
+}
+#goat {
+    display: inline-block;
+    text-align: center;
+}
+#monkey {
+    display: inline-block;
+    text-align: center;
+}
+#rooster {
+    display: inline-block;
+    text-align: center;
+}
+#dog {
+    display: inline-block;
+    text-align: center;
+}
+#pig {
+    display: inline-block;
+    text-align: center;
+}
+
+.individualpageimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* form styling */
+
+
+
+footer{
+    background-color: #FFD84B;
+}
+
+footer p{
+    padding: 3em 2em;
+    text-align: center;
+    font-size: x-small;
+}
