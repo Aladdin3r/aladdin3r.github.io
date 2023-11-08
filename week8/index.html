@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emojis</title>
+    <style>
+        p.emoji {
+          font-size: 300%;
+        }
+        h1~p {
+            background-color: yellowgreen;
+        }
+        li {
+        background-color: black;
+        color: white;
+    }
+    li:hover {
+        background-color: blue;
+        color: red;
+        /* no bullet point */
+        list-style-type: none;
+    }
+    ul li:first-child {
+    background-color: yellow;
+    color: blue;
+  }
+  ul li:nth-child(3) {
+    background-color: black;
+    color: white;
+  }
+  ul li:last-child {
+    background-color: blue;
+    color: red;
+  }
+
+  ul li:nth-child(odd) {
+    font-weight: bold;
+  }
+      </style>    
+</head>
+<body>
+    <h1>Immediate Sibling</h1>
+    <p>Winter</p>
+    <p>Spring</p>
+    <p>Summer</p>
+    <p>Fall</p>
+    <p class="emoji">&#128508;</p>
+    <p class="emoji">&#128509;</p>
+    <p  class="emoji">&#128640;</p>
+    <p class="emoji">&#128642;</p>
+    <p class="emoji">&#128657;</p>
+    <ul>
+        <li>January</li>
+        <li>February</li>
+        <li>March</li>
+        <li>April</li>
+        <li>May</li>
+        <li>June</li>
+        <li>July</li>
+        <li>August</li>
+        <li>September</li>
+        <li>October</li>
+        <li>November</li>
+        <li>December</li>
+      </ul>
+      
+</body>
+</html>

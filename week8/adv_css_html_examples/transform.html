@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        #container {
+            width: 50%;
+            margin: auto;
+        }
+        p.emoji {
+            height: 100px;
+            width: 100px;
+            font-size: 300%;
+            text-align: center;
+            padding: 20px 0px 0px 0px;
+        }
+        p.emoji:first-child {
+            background-color: yellowgreen;
+            /* transform: rotateX(180deg); */
+            /* transform: translateX(-50%); */
+            /* transform: scaleX(200%); */
+            transform: skew(-10deg, 20deg);
+        }
+        p.emoji:nth-child(2) {
+            background-color: yellow;
+            transform: rotateZ(45deg);
+        }
+        p.emoji:last-child {
+            background-color: burlywood;
+            transform: translate(100px, -60px);
+        }
+        p {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p class="emoji">&#128508;</p>
+        <p class="emoji">&#128652;</p>
+        <p class="emoji">&#128690;</p>
+    </div>
+</body>
+</html>

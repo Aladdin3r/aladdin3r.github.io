@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        /* || VARIABLES */
+        :root {
+            --FIRST-CHILD-COLOR: blue;
+            --FIRST-CHILD-BG-COLOR: yellow;
+            --BORDER: 5px solid green;
+        }
+
+
+        p {
+            background-color: black;
+            color: white;
+        }
+
+        p:hover {
+            background-color: blue;
+            color: red;
+            border: var(--BORDER);
+        }
+
+        div p:first-child {
+            background-color: var(--FIRST-CHILD-BG-COLOR);
+            color: var(--FIRST-CHILD-COLOR);
+        }
+
+        div p:nth-child(4) {
+            background-color: brown;
+            color: orange;
+        }
+
+        div p:last-child {
+            background-color: orange;
+            color: yellow;
+        } 
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>January</p>
+        <p>February</p>
+        <p>March</p>
+        <p>April</p>
+        <p>May</p>
+        <p>June</p>
+        <p>July</p>
+        <p>August</p>
+        <p>September</p>
+        <p>October</p>
+        <p>November</p>
+        <p>December</p>
+    </div>
+</body>
+</html>

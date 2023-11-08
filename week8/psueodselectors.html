@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Pseudo Selector Example</title>
+    <link rel="stylesheet" href="css/media_ex1.css"> 
+    <style>
+        #banner { display: none; } 
+        /* + represents the adjacent sibling selector */
+        input:focus + #banner {
+             display: block; 
+            }
+        #banner {
+            color: yellow;
+            background-color: brown;
+            text-align: center;
+        }
+        #banner::after {
+            content: attr(data-surprise);
+            color: yellowgreen;
+        }
+        ul li[data-tag="Hot"] {
+            color: brown;
+            font-weight: bold;
+        }
+        /* || VARIABLES || */
+    :root {
+        --FG-COLOR: #AA4A44; 
+    }
+    #title { color: var(--FG-COLOR); } 
+    #name { color: var(--FG-COLOR); }
+    #div1 {
+        background-color: brown;
+        color: white;
+        height: 100px;
+        width: min(30%, 300px);
+    }
+    </style>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Enter your name">
+    <h1 
+    id="banner"
+    data-surprise="Does that surprise you?">
+        I am superman!
+    </h1>
+    <ul>
+        <li data-tag="Cold and dark">Winter</li>
+        <li data-tag="Warm and sunny">Spring</li>
+        <li data-tag="Hot">Summer</li>
+        <li data-tag="Warm and beautiful">Fall</li>    
+      </ul>
+    <h1 id="title">I am superman!</h1>
+    <p>My name is <span id="name">Clark Kent</span>.</p>
+    <h1>The min() Function</h1>
+    <p>Use min() to set  width of #div1 to whichever  is smallest, 30% or 300px:</p>
+    <div id="div1">Some text...</div>
+    <p>Resize the browser window to see the effect.</p>
+    <div>
+        <h1>Media Queries 1 example</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+             elit. Corrupti libero obcaecati tempore vitae, suscipit dolorem explicabo facere laboriosam excepturi id sequi, non dicta totam pariatur adipisci! 
+             Rerum nulla veniam natus.
+        </p>
+    </div>
+</body>
+</html>

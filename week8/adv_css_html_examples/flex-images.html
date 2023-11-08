@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img2 { display: none; }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media only screen and (max-width: 600px) {
+            #img1 {display: none;}
+            #img2 { display: block; }
+        }
+    </style>
+</head>
+<body>
+    <img src="images/bcit_desktop.png" id="img1" />
+    <img src="images/bcit_mobile.png" id="img2" />
+</body>
+</html>

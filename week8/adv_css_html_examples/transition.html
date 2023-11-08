@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        #container {
+            width: 50%;
+            margin: auto;
+        }
+        p.emoji {
+            height: 100px;
+            width: 100px;
+            font-size: 300%;
+            text-align: center;
+            padding: 20px 0px 0px 0px;
+            background-color: yellowgreen;
+        }
+        p.emoji:hover {
+            background-color: midnightblue;
+            transition-property: background-color;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p class="emoji">&#128508;</p>
+    </div>
+</body>
+</html>

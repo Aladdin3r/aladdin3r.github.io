@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element with attrubute</title>
+    <style>
+        #banner::after {
+            content: attr(data-surprise);
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="banner" data-surprise="Does this surprise you?">
+        I am superman
+    </h1>
+</body>
+</html>

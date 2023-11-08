@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector</title>
+    <style>
+        p {
+            background-color: black;
+            color: white;
+        }
+        /* p:hover {
+            background-color: blue;
+            color: red;
+        }
+
+        div p:first-child {
+            background-color: yellow;
+            color: blue;
+        }
+
+        div p:nth-child(4) {
+            background-color: brown;
+            color: orange;
+        }
+
+        div p:last-child {
+            background-color: orange;
+            color: yellow;
+        } */
+
+        div p:nth-child(odd) {
+            background-color: brown;
+            color: orange;
+        }
+
+        div p:nth-child(even) {
+            background-color: yellow;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>January</p>
+        <p>February</p>
+        <p>March</p>
+        <p>April</p>
+        <p>May</p>
+        <p>June</p>
+        <p>July</p>
+        <p>August</p>
+        <p>September</p>
+        <p>October</p>
+        <p>November</p>
+        <p>December</p>
+    </div>
+</body>
+</html>
