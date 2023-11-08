@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100vh;
+    background: #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.header .footer {
+    height: 50px;
+    background-color: #666;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    flex: 1; /* takes up all the extra space that header and footer don't use*/
+    background-color: #999;
+    color: #000;
+}
+
+.main {
+    flex: 1;
+    background-color: #eee;
+    order: 2;
+}
+
+.sidebar1 {
+    width: 20%;
+    background-color: #ccc;
+    order: 1;
+}
+.sidebar2 {
+    width: 20%;
+    background-color: #ddd;
+    order: 3;
+}
