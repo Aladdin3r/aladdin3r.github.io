@@ -2,7 +2,7 @@ body {
    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    padding: 20px;
    min-height: 100vh;
-   
+   border: solid black;
  }
  
  
@@ -15,8 +15,13 @@ body {
     color: brown;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 10em;
-    
+    row-gap: 1em;
  } 
+
+ div {
+  display: grid;
+  place-content: center;
+ }
 
 
 
