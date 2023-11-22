@@ -1,0 +1,62 @@
+#title {
+    text-align: center;
+    text-shadow: 1px 1px 1px blue;
+    color: lightblue;
+    font-style: italic;
+}
+.content {
+    text-align: center;
+    
+}
+body {
+    background-color: aliceblue;
+}
+div.gallery {
+    max-width: 90%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+#cat {
+    transform: skewX(20deg);
+    transform: skewY(10deg);
+}
+#otter {
+    transform: skewX(20deg);
+    transform: skewY(10deg);
+}
+#dog {
+    transform: skewX(20deg);
+    transform: skewY(10deg);
+}
+
+#cat:hover {
+    transform: skewX(0deg);
+    transform: skewY(0deg);
+}
+#otter:hover {
+    transform: skewX(0deg);
+    transform: skewY(0deg);
+}
+#dog:hover {
+    transform: skewX(0deg);
+    transform: skewY(0deg);
+}
+
+div.gallery img {
+    float: left;
+    max-width: 45%;
+    border: 5px solid white;
+    margin: 5px;
+}
+
+.container .textbox {
+    position: relative;
+    bottom: 0;
+    width: 35%;
+    padding: 20px;
+    background: lightblue;
+    z-index: -1;
+}
+

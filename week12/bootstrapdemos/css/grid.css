@@ -1,0 +1,33 @@
+body {
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 20px;
+   min-height: 100vh;
+ }
+ 
+ 
+ h2 {
+    text-align: center;
+ }
+ 
+ .container {
+    display: grid;
+    color: brown;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 10em;
+    row-gap: 1em;
+ } 
+
+ div {
+  display: grid;
+  place-content: center;
+ }
+
+
+
+ .first {
+   background-color: orange;
+   color: white;
+   text-align: center;
+   display: grid;
+  grid-column: 1 / 5;
+ }
